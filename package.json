@@ -1,0 +1,19 @@
+{
+  "name": "cashforce",
+  "version": "1.0.0",
+  "description": "## Project setup ``` npm install ```",
+  "main": "cashforce-api/src/app.js",
+  "scripts": {
+    "install:back": "cd ./cashforce-api && npm install",
+    "install:front": "cd ./cashforce-nfs && npm install",
+    "install:apps": "npm run install:front && npm run install:back",
+    "start:back": "cd ./cashforce-api && node src/app.js",
+    "start:front": "cd ./cashforce-nfs && npm run serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "cashforce-teste-tecnico"
+  },
+  "author": "Pedro-A-Carvalho",
+  "license": "ISC"
+}
