@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  mysql:
+    image: mysql:8.0.32
+    container_name: my-mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: cashforce123
+      MYSQL_DATABASE: cashforce
+    volumes:
+      - ./db.example.sql:/docker-entrypoint-initdb.d/db.example.sql
+    ports:
+      - 3306:3306
