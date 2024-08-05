@@ -10,9 +10,3 @@ npm run start:front
 ```
 
 
-### Starts
-```
-npm run serve
-```
-
-
